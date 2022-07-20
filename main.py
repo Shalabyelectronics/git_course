@@ -4,7 +4,7 @@ from pathlib import Path
 app = typer.Typer()
 
 @app.command()
-def hi()->str:
+def hi():
     names = Path("names.json")
     name = typer.prompt("What is your name?")
     typer.secho(f"Hi, {name}!",
