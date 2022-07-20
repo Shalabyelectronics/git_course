@@ -24,6 +24,7 @@ def hi()->str:
 
 @app.command()
 def bye():
+    """This command will say goodbye to all users"""
     check_name = Path("names.json")
     if check_name.is_file():
         with open(check_name, "r") as names_f:
