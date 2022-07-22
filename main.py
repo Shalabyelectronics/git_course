@@ -5,6 +5,7 @@ app = typer.Typer()
 
 @app.command()
 def hi():
+    """This command will say hi to user and save thier names."""
     names = Path("names.json")
     name = typer.prompt("What is your name?")
     typer.secho(f"Hi, {name}!",
