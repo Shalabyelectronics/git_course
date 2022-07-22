@@ -3,6 +3,10 @@ import json
 from pathlib import Path
 app = typer.Typer()
 
+@app.callback()
+def callback():
+    """This CLI App is about learning version control with git"""
+
 @app.command()
 def hi():
     """This command will say hi to user and save thier names."""
